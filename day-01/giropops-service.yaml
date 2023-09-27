@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: giropops-service
+spec:
+  selector:
+    run: giropops-senhas
+  ports:
+    - protocol: TCP
+      port: 8080
+      targetPort: 5000
